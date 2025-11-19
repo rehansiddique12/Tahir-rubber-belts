@@ -5775,9 +5775,34 @@ textarea.form-control {
   position: absolute;
   bottom: 0;
   left: 0;
-  max-width: 250px;
+  max-width: 200px;
+  max-height: 150px;
   border-radius: 0 4px 0 4px;
 }
+.about-layout2 .about__img:hover .cta__banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 250px;
+  max-height: 250px;
+  transition-duration: 1s;
+  border-radius: 0 4px 0 4px;
+}
+
+/* Target the image and apply smooth scaling */
+.title-box .icon-gears-2 {
+  transition: transform 0.3s ease;
+  corsor: pointer; /* smooth animation */
+}
+
+/* Scale on hover */
+.title-box .icon-gears-2:hover {
+  transform: scale(1.05) rotate(360deg); /* 105% size */
+  animation-duration: 1s;
+  corsor: pointer;
+  
+}
+
 @media only screen and (min-width: 1200px) {
   .about-layout1 .about__img {
     margin-right: 40px;
