@@ -82,7 +82,7 @@ button:focus {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.274);
     border-radius: 50px 0 0 50px;
     padding: 15px 10px;
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
@@ -135,6 +135,50 @@ button:focus {
 .whatsapp {
     background: #25d366;
 }
+
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 40px 0; /* spacing at top & bottom */
+    overflow-y: auto; /* ENABLE SCROLLING */
+    z-index: 2000;
+}
+
+.modal-content-box {
+    max-width: 95vw;
+    max-height: none;
+    margin: 0 auto;
+}
+
+#modalImage {
+    width: 900px;
+    height: auto; /* auto height for scroll */
+    border-radius: 10px;
+    border: 2px solid #2692f7;
+    display: block;
+    margin: 20px auto;
+}
+
+.close-modal {
+    position: fixed; /* stays visible during scroll */
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 3000;
+}
+
 
 
 textarea {
